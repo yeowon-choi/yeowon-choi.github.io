@@ -1,7 +1,56 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h1>안녕하세요, 제 홈페이지입니다</h1>
-  <p>GitHub Pages로 만들었습니다!</p>
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="최여원의 개인 홈페이지 - 서울대학교 첨단융합학부" />
+    <title>최여원 | 개인 홈페이지</title>
+    <style>
+      :root { --ink: #132238; --muted: #5a687a; --paper: #f7f9fc; --card: #fff; --accent: #1769aa; --accent-soft: #e6f1fa; --line: #dce4ee; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; font-size: 16px; line-height: 1.7; }
+      a { color: inherit; }
+      .wrap { width: min(100% - 2rem, 920px); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(255, 255, 255, 0.9); }
+      nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+      .brand { font-weight: 750; text-decoration: none; }
+      .nav-links { display: flex; gap: 1.1rem; }
+      .nav-links a { color: var(--muted); font-size: 0.95rem; text-decoration: none; }
+      .nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
+      main { padding: 4.5rem 0 3rem; }
+      .intro { max-width: 680px; margin-bottom: 4.5rem; }
+      .eyebrow { margin: 0 0 0.75rem; color: var(--accent); font-size: 0.9rem; font-weight: 750; letter-spacing: 0.08em; }
+      h1, h2 { line-height: 1.25; }
+      h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 4.8rem); letter-spacing: -0.06em; }
+      .intro p:last-child { margin: 1.25rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 2.5vw, 1.25rem); }
+      .sections { display: grid; gap: 1.25rem; }
+      section { padding: clamp(1.5rem, 4vw, 2.25rem); border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+      h2 { margin: 0 0 0.75rem; font-size: 1.45rem; letter-spacing: -0.03em; }
+      section p { margin: 0; color: var(--muted); }
+      .interests { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+      .interests li { padding: 0.38rem 0.8rem; border-radius: 999px; background: var(--accent-soft); color: #15527f; font-size: 0.95rem; font-weight: 650; }
+      .contact-link { display: inline-flex; margin-top: 1rem; padding: 0.65rem 1rem; border-radius: 9px; background: var(--accent); color: white; font-weight: 700; text-decoration: none; }
+      .contact-link:hover, .contact-link:focus-visible { background: #0f568e; }
+      footer { padding: 0 0 2rem; color: var(--muted); font-size: 0.88rem; }
+      @media (max-width: 460px) { nav { min-height: auto; padding: 1rem 0; align-items: flex-start; flex-direction: column; } .nav-links { gap: 0.9rem; } main { padding-top: 3.25rem; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap" aria-label="주요 메뉴">
+        <a class="brand" href="#top">최여원</a>
+        <div class="nav-links"><a href="#about">소개</a><a href="#interests">관심사</a><a href="#contact">연락처</a></div>
+      </nav>
+    </header>
+    <main id="top" class="wrap">
+      <div class="intro"><p class="eyebrow">PERSONAL WEBSITE</p><h1>최여원</h1><p>서울대학교 첨단융합학부에서 배우고, 새로운 가능성을 탐구하고 있습니다.</p></div>
+      <div class="sections">
+        <section id="about"><h2>소개</h2><p>안녕하세요. 서울대학교 첨단융합학부에 재학 중인 최여원입니다. 다양한 분야를 연결하며 배움의 폭을 넓혀가고 있습니다.</p></section>
+        <section id="interests"><h2>관심사</h2><p>기술과 사람의 일상에 닿는 새로운 아이디어에 관심이 있습니다.</p><ul class="interests" aria-label="관심 분야"><li>융합 기술</li><li>새로운 배움</li><li>아이디어 탐구</li></ul></section>
+        <section id="contact"><h2>연락처</h2><p>프로젝트와 작업 기록은 GitHub에서 확인하실 수 있습니다.</p><a class="contact-link" href="https://github.com/yeowon-choi" target="_blank" rel="noreferrer">GitHub에서 만나기</a></section>
+      </div>
+    </main>
+    <footer class="wrap">© 2026 최여원</footer>
+  </body>
 </html>
